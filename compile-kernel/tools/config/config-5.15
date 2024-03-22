@@ -120,7 +120,7 @@ CONFIG_TASKSTATS=y
 CONFIG_TASK_DELAY_ACCT=y
 CONFIG_TASK_XACCT=y
 CONFIG_TASK_IO_ACCOUNTING=y
-# CONFIG_PSI is not set
+CONFIG_PSI=y
 # end of CPU/Task time and stats accounting
 
 CONFIG_CPU_ISOLATION=y
@@ -6892,6 +6892,7 @@ CONFIG_DVB_SP8870=m
 #
 # Android
 #
+CONFIG_ASHMEM=y
 # end of Android
 
 # CONFIG_STAGING_BOARD is not set
@@ -7780,7 +7781,11 @@ CONFIG_RAS=y
 #
 # Android
 #
-# CONFIG_ANDROID is not set
+CONFIG_ANDROID=y
+CONFIG_ANDROID_BINDER_IPC=y
+CONFIG_ANDROID_BINDERFS=y
+CONFIG_ANDROID_BINDER_DEVICES="binder,hwbinder,vndbinder,anbox-binder,anbox-hwbinder,anbox-vndbinder"
+#
 # end of Android
 
 # CONFIG_LIBNVDIMM is not set
